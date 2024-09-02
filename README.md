@@ -22,6 +22,6 @@ A number of standard scientific python packages are needed for the numerical sim
 
 
 #### Files organization/running the code
-In  [bash scripts](./scripts_generate_figures) there are the bash handlers used to sweep through parameters space and call the ODE models integrators (in [models](./models_python)), generating synthetic data and organizing the folders in the required relative positions. [plots](./plots) contains the scripts to produce the figures in once synthetic data are generated.
-[lib](./lib) contains some plotting cosmetics definitions.
+In  [bash scripts](./scripts_generate_figures) there are the bash handlers used to sweep through parameters space and call the ODE models integrators (in [models](./models_python)), generating synthetic data and organizing the folders in the required relative positions. [The plots folder](./plots) contains the scripts to produce the figures in once synthetic data are generated.
+[Lib](./lib) contains some plotting cosmetics definitions. Finally [the jupyter notebook](./import_data_LD_2023_clean.ipynb) contains the data processing code that takes Microsoft Excel files with the fluctuation test results and produces txt files compatible with the inference tool [bzrates](http://www.lcqb.upmc.fr/bzrates#:~:text=bz%2Drates%20is%20a%20web,mutation%20rates%20from%20fluctuation%20assays.)
 
