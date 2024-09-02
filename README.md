@@ -1,18 +1,18 @@
-# multi-strain-infection-clearance
+# Multi-strain phage induced clearance of bacterial infections
 
 
 This repository contains the source code associated with the manuscript
 
-Marchi, Laessig, Walczak, Mora: Antigenic waves of virus-immune co-evolution 2021
+Marchi, Ngoc Minh, Debarbieux, Weitz: Multi-strain phage induced clearance of bacterial infections 2024
 
-It allows reproduction of all figures of the manuscript from pre-processed numerical data and also provides the simulation code for transparency and review.
+It allows reproduction of all figures of the manuscript.
 
 
 ## Figures reproduction code
 
 #### Installation requirements
 
-The visualization code uses Python 2.7+.
+The visualization code uses Python 3.
 
 A number of standard scientific python packages are needed for the numerical simulations and visualizations. An easy way to install all of these is to install a Python distribution such as [Anaconda](https://www.anaconda.com/):
 
