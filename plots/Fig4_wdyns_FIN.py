@@ -371,7 +371,7 @@ def plot_summary_diagram(phi, I, array_z , zlabel, pars):
         # ~ ax.plot(t_eval, P2, linestyle='-', color='b', label='Phage 2')
         
         ax.set_xlabel('Time (h)')
-        ax.set_ylabel(r"Density (g$^{-1}$)")
+        ax.set_ylabel(r"Density (g$^{-1}$)", labelpad=20)
         ax.set_xlim(0,100)
         ax.set_ylim(10,5e13)
         ax.set_yscale('log')
@@ -389,8 +389,18 @@ def plot_summary_diagram(phi, I, array_z , zlabel, pars):
     
         ax.tick_params(direction='in',width=1.5)
         
+        ax.yaxis.tick_right()
+        ax.yaxis.set_ticks_position('both')
+        
+        if i<2:
+            # ~ ax.set_ylabel("")
+            # ~ frame1 = plt.gca()
+            # ~ frame1.axes.get_yaxis().set_visible(False)
+            # ~ ax.get_yaxis().set_visible(False)
+            ax.set_yticklabels([])
+            
         if i>0:
-            ax.get_yaxis().set_visible(False)
+            ax.set_ylabel("")
             
         
     labeldict = dict(labelstyle=r'%s', fontsize=20,

@@ -174,7 +174,7 @@ for i in range(len(Is)):
     # ~ ax.plot(t_eval, P2, linestyle='-', color='b', label='P2')
     
     ax.set_xlabel('Time (h)')
-    ax.set_ylabel(r"Density (g$^{-1}$)")
+    ax.set_ylabel(r"Density (g$^{-1}$)", labelpad=20)
     ax.set_xlim(0,100)
     ax.set_ylim(10,5e13)
     ax.set_yscale('log')
@@ -193,13 +193,19 @@ for i in range(len(Is)):
     
     # ~ plt.setp(ax.spines.values(),linewidth=1.5)
     ax.tick_params(labelsize=14,direction='in',width=1.5)
+    # ~ ax.yaxis.set_label_position("right")
+    ax.yaxis.tick_right()
+    ax.yaxis.set_ticks_position('both')
     
-    if i>0:
+    if i<2:
         # ~ ax.set_ylabel("")
         # ~ frame1 = plt.gca()
         # ~ frame1.axes.get_yaxis().set_visible(False)
-        ax.get_yaxis().set_visible(False)
+        # ~ ax.get_yaxis().set_visible(False)
+        ax.set_yticklabels([])
         
+    if i>0:
+        ax.set_ylabel("")
  
 out_file='{out}/Fig2.pdf'.format(out=dir_out_plots_tot)
 
